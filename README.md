@@ -4,8 +4,8 @@ This is my DSA practice repository, primarily focused on **LeetCode**, with prob
 
 I'm using this repository for two things:
 
-* **DSA practice** — understanding, breaking down, analyzing, and solving problems using Java.
-* **Git practice** — making regular commits and maintaining my progress through version control.
+* **DSA practice** - understanding, breaking down, analyzing, and solving problems using Java.
+* **Git practice** - making regular commits and maintaining my progress through version control.
 
 ## How I'm Organizing It
 
@@ -32,7 +32,7 @@ The solutions are written in **Java**, and I'll add my approaches, optimizations
 ## Platforms
 (My profile links)
 
-* [LeetCode] — https://leetcode.com/u/Tithi_Agarwal/
+* [LeetCode] - https://leetcode.com/u/Tithi_Agarwal/
 * [Coding Ninjas] - https://www.naukri.com/code360/profile/38d0ad36-95cd-4b34-bb43-6d0c17c1a005
 * [GeeksforGeeks] - https://www.geeksforgeeks.org/profile/tithiaga6j1s?tab=activity
 
