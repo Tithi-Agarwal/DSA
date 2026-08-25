@@ -40,7 +40,7 @@ The solutions are written in **Java**, and I'll add my approaches, optimizations
 
 Not just to solve problems, but to get better at **thinking through them**.
 
-> Analyze. Break it down. Solve it. Learn from it. Commit it.
+> Analyze. Break. Solve. Learn. Commit.
 
 *Sometimes U break the problem.*
 *Sometimes the problem breaks u.*
