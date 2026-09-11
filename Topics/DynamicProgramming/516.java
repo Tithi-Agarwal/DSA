@@ -1,6 +1,4 @@
 //516. Longest Palindromic Subsequence
-package Topics.DynamicProgramming;
-
 class Solution {
     public int f(int l,int r,String s,int[][] dp)
     {

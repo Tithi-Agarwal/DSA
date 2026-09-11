@@ -1,5 +1,15 @@
 //2265. Count Nodes Equal to Average of Subtree
 
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+}
+
 class Solution {
     int count = 0;
 

@@ -55,3 +55,52 @@ class Solution2 {
         return check(prices, 0, 1, dp);
     }
 }
+
+
+
+//Tabulation
+class Solution3 {
+    public int maxProfit(int[] prices) {
+        int n = prices.length;
+        int dp[][] = new int[n + 1][2];
+        for(int[] row: dp)
+            Arrays.fill(row, -1);
+
+        //Base case
+        dp[n][0] = 0;
+        dp[n][1] = 0;
+
+        //copy recursion
+        for(int i = n-1; i >=0; i--)
+        {
+            dp[i][0] = Math.max(prices[i] + dp[i+1][1], dp[i+1][0]);
+            dp[i][1] = Math.max((prices[i] * -1) + dp[i + 1][0], dp[i + 1][1]);
+        }
+
+        //return wt u call
+        return dp[0][1];
+    }
+}
+
+
+
+//Space Optimization
+class Solution4 {
+    public int maxProfit(int[] prices) {
+        int n = prices.length;
+
+        int nextBuy = 0, nextSell = 0, currSell = 0, currBuy = 0;
+
+        //copy recursion
+        for(int i = n-1; i >=0; i--)
+        {
+            currSell = Math.max(prices[i] + nextBuy, nextSell);
+            currBuy = Math.max((prices[i] * -1) + nextSell, nextBuy);
+            nextBuy = currBuy;
+            nextSell = currSell;
+        }
+
+        //return wt u call
+        return currBuy;
+    }
+}
