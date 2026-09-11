@@ -1,4 +1,5 @@
 //3483. Unique 3-Digit Even Numbers
+import java.util.*;
 
 class Solution {
     public void check(int[] nums, int ind, int place, int curr,
