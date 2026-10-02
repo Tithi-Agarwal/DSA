@@ -1,7 +1,7 @@
 //20
 import java.util.*;
 
-public class Solution {
+class Solution {
     public static boolean isValid(String s) 
     {
         int i;
