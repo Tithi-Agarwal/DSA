@@ -1,4 +1,5 @@
 //2567. Minimum Score by Changing Two Elements
+import java.util.*;
 
 class Solution {
     public int minimizeSum(int[] nums) {
