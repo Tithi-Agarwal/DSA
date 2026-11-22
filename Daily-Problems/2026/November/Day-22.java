@@ -2,15 +2,16 @@
 
 class Solution {
     public boolean checkString(String s) {
-        int n = s.length();
-
-        for (int i = 0; i < n; i++) {
-            if (s.charAt(i) != 'b') continue;
-            for (int j = i + 1; j < n; j++) {
-                if (s.charAt(j) == 'a') return false;
-            }
+        int counter = 0;
+        for(char ch: s.toCharArray())
+        {
+            if(ch == 'b')       // the moment we find b we start counting
+                counter++;
+            else
+                if(counter > 0)     // if a encountered after count > 0 then false (works like a flag)
+                    return false;
+            
         }
-
         return true;
     }
 }
